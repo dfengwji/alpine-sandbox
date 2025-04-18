@@ -1,5 +1,5 @@
 #!/bin/sh
-chpasswd < /root/passwd
+#chpasswd < /root/passwd
 
 if [ -f /meex/.init.sh ];then
     /meex/.init.sh
