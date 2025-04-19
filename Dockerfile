@@ -2,7 +2,7 @@
 #
 # MeexTech Sandbox
 #
-# ENV: PROD
+# ENV: MeexTech
 # VERSION: 3.15
 #
 # *************************************
@@ -48,11 +48,10 @@ ENV LANG=en_US.UTF-8
 # change password
 ###############################
 RUN mkdir -p /root
-#RUN echo root:meexsandbox > /root/passwd
+RUN echo root:meexsandbox > /root/passwd
 
 RUN mkdir -p /meex
 
-EXPOSE 22
 COPY entry.sh /usr/bin/entry.sh
 RUN chmod +x /usr/bin/entry.sh
 
